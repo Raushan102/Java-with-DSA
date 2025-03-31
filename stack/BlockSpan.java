@@ -24,7 +24,6 @@ public class BlockSpan {
       }
 
       stk.push(i);
-
     }
 
   }

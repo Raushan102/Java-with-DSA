@@ -2,8 +2,10 @@ package recursion.easy_question;
 
 import java.util.Arrays;
 
+// time complexity is O(nlog n) that's all
 public class MergeShort {
 
+    // divide the array in to two part
     public  static  int [] mergeSort(int arr []){
          if(arr.length==1){
              return  arr;
@@ -16,6 +18,7 @@ public class MergeShort {
          return  merge(left,right);
     }
 
+    // function to short and merge the array
     private static int[] merge(int[] left, int[] right) {
         int [] mix= new int[left.length+right.length];
         int i=0;
