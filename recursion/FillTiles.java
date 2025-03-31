@@ -8,7 +8,6 @@ public class FillTiles {
 
     int verticalWays = findWays(n - 1);
     int horizontalWays = findWays(n - 2);
-
     return verticalWays + horizontalWays;
 
   }
