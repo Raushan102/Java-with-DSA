@@ -24,9 +24,22 @@ public class RemoveLetterFromString {
         return WithOutElement;                    // return
     }
 
+    public static String anotherWay(String str) {
+        if (str.isEmpty()) {
+            return "";
+        }
+        char ch = str.charAt(0);
+        if (ch == 'a') {
+            return anotherWay(str.substring(1));
+        } else {
+            return ch + anotherWay(str.substring(1));
+        }
+
+    }
+
 
     public static void main(String[] args) {
-        String str = "Raushan";
-        stringRemove(str, 'a');
+        String str = "badcaa";
+        System.out.println(anotherWay(str));
     }
 }
