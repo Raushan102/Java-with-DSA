@@ -26,7 +26,6 @@ public class MergeSort {
   }
 
   public static void merge(int arr[], int mid, int si, int ei) {
-    System.out.println("yes this funciton is callled ");
     int temArr[] = new int[ei - si + 1];
     int i = si;
     int j = mid + 1;
