@@ -17,7 +17,7 @@ public class MergeSort {
       return;
     }
 
-    // kame
+    //
     int mid = si + (ei - si) / 2;
     mergeSort(arr, si, mid);
     mergeSort(arr, mid + 1, ei);
@@ -55,12 +55,10 @@ public class MergeSort {
       temArr[k++] = arr[j++];
     }
 
-    System.out.println("up loop"+si);
 
     for (k = 0, i = si; k < temArr.length; k++, i++) {
       arr[i] = temArr[k];
     }
-    System.out.println("end");
   }
 
   public static void main(String[] args) {

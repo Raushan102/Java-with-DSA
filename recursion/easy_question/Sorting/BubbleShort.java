@@ -27,7 +27,7 @@ public class BubbleShort {
       array[j + 1] = temp;
     }
 
-    if (j == array.length - 2 - i) {
+    if (j == array.length - 2) {
       j = 0;
       return bubbleShort(array, ++i, j);
     }
