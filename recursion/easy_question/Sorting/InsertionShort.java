@@ -24,8 +24,8 @@ public class InsertionShort {
             return helper(arr, i, previous, current);           // make a call to check previous one
         }
 
-        i++;
         arr[previous + 1] = current;                           // set the element in the correct position
+        i++;
 
         if (i < arr.length) {
             current = arr[i];

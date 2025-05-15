@@ -13,6 +13,6 @@ public class TestPackage extends Student {
 
   public static void main(String[] args) {
     TestPackage st = new TestPackage("Kavya", 34, 9.8f);
-    System.out.println(st.name);
+
   }
 }
